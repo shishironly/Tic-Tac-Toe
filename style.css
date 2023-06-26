@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr{
+    background-color: black;
+    width: 500px;
+    height: 2px;
+}
+
+
+#board{
+    /* background-color: yellow; */
+    height: 450px;
+    width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* There are nine tiles and each tile will have height and width of 150px but we will give 3px space for horizontal and vertical lines too. */
+.tile{
+    width: 147px;
+    height: 147px;
+
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.horizontal-line{
+    border-bottom: 3px solid black;
+}
+
+.vertical-line{
+    border-right: 3px solid black;
+}
+
+.winner{
+    background-color: lightgray;
+    color: red;
+}
